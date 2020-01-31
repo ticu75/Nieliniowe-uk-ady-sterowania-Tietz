@@ -72,7 +72,7 @@ void setup()
 
 void loop()
 {
-  Serial.println("Wybierz co chcesz zrobic?(dostepne: grzej, zero, pozycja, temp)");
+  Serial.println("Wybierz co chcesz zrobic?(dostepne: grzej, zero, temp)");
   while (Serial.available()){
       czynnosc = Serial.readStringUntil('\n');
   }
