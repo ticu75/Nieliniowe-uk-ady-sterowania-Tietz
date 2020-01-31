@@ -96,7 +96,7 @@ void loop()
      y = aa*x*x*x+bb*x*x+cc*x+d;
      lcd.print(y);
     digitalWrite(HEATER_0_PIN, LOW);
-    delay(0.1);
+    delayMicroseconds(100);
       }
    Serial.println("grzanie zakonczone");
   
@@ -124,7 +124,7 @@ void loop()
     {
       digitalWrite(Z_STEP_PIN, HIGH);
     }
-   delay(50);
+   delayMicroseconds(100);
   if (aa == HIGH && bb == HIGH && cc == HIGH){
     Serial.println("Ustawiono pozycje zerowa");
     digitalWrite(X_STEP_PIN, LOW);
@@ -145,7 +145,7 @@ void loop()
      y = a*x*x*x+b*x*x+c*x+d;
      lcd.print(y);
   
-    delay(400);
+    delayMicroseconds(1000);
   }
 
 
